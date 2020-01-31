@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>WebApp</title>
+
+</head>
+
+<body>
+<a href = " {{ url_for('login') }}">Login</a> Instead <br>
+<a href = " {{ url_for('home') }}">Home</a> <br>
+<a href = " {{ url_for('about') }}">About</a> <br>
+
+ 
+{% block body %}{% endblock %}
+
+</body>
+
+</html>

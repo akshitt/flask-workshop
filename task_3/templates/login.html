@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 
-{% block content %}
+{% block body %}
 
 <form method="POST", action="">
+	{{ form.hidden_tag() }}
+	
 	<fieldset>
 		<legend>Join Now!</legend>
 		<div>
@@ -19,4 +21,4 @@
 	</fieldset>
 </form>
 
-{% endblock content %}
+{% endblock body %}
