@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form method="POST", action="">
+	<fieldset>
+		<legend>Join Now!</legend>
+		<div>
+			{{ form.username.label() }}
+			{{ form.username()}}
+		</div>
+		<div>
+			{{ form.password.label() }}
+			{{ form.password()}}
+		</div>
+		<div>
+			{{ form.submit() }}
+		</div>
+	</fieldset>
+</form>
+
+{% endblock content %}
